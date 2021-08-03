@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useEffect, useReducer, useCallback } from "react";
 import Reducer from './Reducer';
 import { ADD_TO_CART_LIST, ADD_TO_CART_WISHLIST, REMOVE_SINGLE_ITEM, INCREACE_QUANTITY, PRODUCT_SUCCESS, DECREACE_QUANTITY, SET_TOTAL_PRICE, REMOVE_SINGLE_FROM_WISHLIST, SHOW_ONLY_SINGLE, INCREACE_DETAILS_SINGLEI_ITEM, DECREACE_DETAILS_SINGLEI_ITEM, ADD_TO_CART_LIST_FROM_SINGLE_DETAILS } from './Typed';
-// import dotenv from 'dotenv'
+
 
 
 const ContextProvider = createContext();
@@ -16,11 +16,6 @@ const initialState = {
   singleItem: [],
 }
 const url = `https://previewux.github.io/project-data-electronics/`;
-// dotenv.config({ path: '../config.env' })
-// dotenv.config()
-
-// const REACT_APP_PRODUCT_API = process.env
-// console.log(dotenv.config({ path: './config.env' }));
 
 const Contex = ({ children }) => {
 

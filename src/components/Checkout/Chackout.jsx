@@ -29,9 +29,13 @@ const Chackout = ({ checkoutProducts }) => {
     const signal = controller.signal;
 
     const CountryFecth = useCallback(async () => {
-        const response = await fetch(url, { signal: signal })
-        const data = await response.json()
-        dispatch({ type: COUNTRY_INFO_SUCCESS, payload: data })
+        try {
+            const response = await fetch(url, { signal: signal })
+            const data = await response.json()
+            dispatch({ type: COUNTRY_INFO_SUCCESS, payload: data })
+        } catch (error) {
+            console.log('fail to fecth');
+        }
     }, [signal])
 
     const USER_INFORMATION = (info) => {

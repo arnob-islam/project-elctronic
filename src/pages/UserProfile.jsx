@@ -26,8 +26,8 @@ const UserProfile = () => {
 
 
     return (
-        <section>
-            <TittleThumb props={'my accont'} />
+        <section className='user__profile'>
+            <TittleThumb props={'My accont'} />
 
             <div className="container">
                 <div className=" kalsjfojl">

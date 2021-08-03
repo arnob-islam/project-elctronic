@@ -49,7 +49,7 @@ const SingleProduct = ({ SpacificProducts, DivTitle }) => {
     return (
         <>
             <div className="container">
-                <div className='d-flex justify-content-between flex-column flex-md-row align-items-center mb-4' >
+                <div className='d-flex justify-content-between flex-column flex-md-row mb-4' >
                     <h4>{DivTitle}</h4>
                     <form onSubmit={(e) => e.preventDefault()}>
                         <input type="text" name="" onChange={HandeSubmitInput} ref={input__fild} id="searc__product__fild" placeholder='search...' />
@@ -63,22 +63,21 @@ const SingleProduct = ({ SpacificProducts, DivTitle }) => {
                         return (
                             <div className="single__product__wrapper" key={id}>
                                 <article className="single__products__body">
-                                    <Link to={`/single/product/${id}`} className="products__ref_">
-                                        <div className="singe__products__image">
-                                            <img src={image_url} className="img-fluid" alt={name} />
-                                        </div>
-                                        <div className="single__carts__container">
-                                            <div className="cart__wrapper">
-                                                <button className='add__to__cart' onClick={() => ADD_TO_CART(id)}>
-                                                    <Bag />
-                                                </button>
+                                    <div className="singe__products__image">
+                                        <img src={image_url} className="img-fluid" alt={name} />
+                                    </div>
+                                    <div className="single__carts__container">
+                                        <div className="cart__wrapper">
+                                            <button className='add__to__cart' onClick={() => ADD_TO_CART(id)}>
+                                                <Bag />
+                                            </button>
 
-                                                <button className='add__to__wishlist' onClick={() => ADD_TO_WISH(id)}>
-                                                    <Hart />
-                                                </button>
-                                            </div>
+                                            <button className='add__to__wishlist' onClick={() => ADD_TO_WISH(id)}>
+                                                <Hart />
+                                            </button>
                                         </div>
-
+                                    </div>
+                                    <Link to={`/single/product/${id}`} className="products__ref_ mt-3">
                                         <span> {name} </span>
                                         <del>$ {former_price}</del>
                                         <h6>$ {price}</h6>

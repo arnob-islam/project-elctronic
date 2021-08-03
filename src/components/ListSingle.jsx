@@ -77,13 +77,9 @@ const ListSingle = ({ honesItem, DivTitle }) => {
                         </div>
                         <div className="total__cart_price d-flex justify-content-between">
                             <span>total </span>
-                            <span> {total} </span>
+                            <span> {`$ ${total}`} </span>
                         </div>
-                        {/* <h1>{honesItem.reduce((amount, item) => {
-                            return item.price + amount
 
-                        }, 0).toFixed(2)
-                        }</h1> */}
                         <Link to={`/checkout/by/cart/`} className='btn btn-primary to_go_chakout mt-3'>chackout</Link>
                     </div>
                 </div>

@@ -361,6 +361,7 @@ button.btn_search_products {
 }
 
 .wishandcartlist {
+  background: white;
   .container {
     .row {
       display: grid !important;
@@ -434,14 +435,18 @@ button.btn_search_products {
 }
 
 .view__wishList {
+  background: white;
   .article-wrapper {
     article {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
+      grid-gap: 2rem;
       gap: 2rem;
       flex-direction: row;
       flex-wrap: nowrap;
+      max-width: 565px;
+      margin: auto;
       .img_container {
         width: 9rem;
         img {
@@ -848,7 +853,9 @@ $width: 220px;
 .user__details__ {
   width: 75%;
 }
-
+.user__profile {
+  background: white;
+}
 .body__infos {
   display: flex;
   flex-direction: column;
@@ -873,7 +880,7 @@ $width: 220px;
   }
 }
 .branding__head {
-  background: white;
+  background: $--main-bg-color;
   padding: 1rem 1.5rem 2rem;
 }
 
@@ -900,7 +907,6 @@ $width: 220px;
   }
 }
 .other_switcher {
-  background: #f8f9fa;
   margin-top: 1rem;
   ul {
     padding: 0;
@@ -911,7 +917,7 @@ $width: 220px;
     li {
       list-style: none;
       padding: 0.5rem 0;
-      background: #ffffff;
+      background: $--main-bg-color;
       padding-left: 1rem;
       .log_out_btn {
         background: none;
@@ -933,12 +939,18 @@ $width: 220px;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Catamaran:400,800");
+.error_container {
+  padding: 6.5rem 0 0;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
 .error-container {
   text-align: center;
   font-size: 106px;
   font-family: "Catamaran", sans-serif;
   font-weight: 800;
-  margin: 70px 15px;
+  margin: 5rem 0 0;
 }
 .error-container > span {
   display: inline-block;

@@ -35,42 +35,52 @@ const App = () => {
       <Switch>
         <Route exact path='/'>
           <Home />
+          <Footer />
         </Route>
         <Route path='/all/popular/products/'>
           <Popular />
+          <Footer />
         </Route>
 
         <Route path='/all/products/of/months'>
           <ProductsOfTheMonth />
+          <Footer />
         </Route>
 
         <Route path='/products/catagory/mobile'>
           <Mobile />
+          <Footer />
         </Route>
 
         <Route path='/products/catagory/accesories/laptop'>
           <Laptops />
+          <Footer />
         </Route>
 
         <Route path='/products/catagory/ComputerAccosories/'>
           <ComputerAccosories />
+          <Footer />
         </Route>
         <Route path='/products/catagory/recomanded/'>
           <Recomanded />
+          <Footer />
         </Route>
 
 
         <Route path='/products/catagory/Camara/all'>
           <Camara />
+          <Footer />
         </Route>
 
 
         <Route path='/catagory/brands/'>
           <Brands />
+          <Footer />
         </Route>
 
         <Route path='/view/cartlist/'>
           <CartList />
+
         </Route>
         <Route path='/view/wishlist/'>
           <WishList />
@@ -86,12 +96,15 @@ const App = () => {
         </Route>
 
         <Route path='/single/product/:id' children={<SingleDetails />}>
+        
         </Route>
 
         <Route path='/products/catagory/brands/:brand' children={<BrandSingle />}>
+          <Footer />
         </Route>
 
         <Route path='/products/chakout/:id' children={<CheckoutBySingle />}>
+
         </Route>
         <Route path='/checkout/by/cart/' children={<CheckoutByCart />}>
         </Route>
@@ -102,7 +115,7 @@ const App = () => {
           <Error />
         </Route>
       </Switch>
-      <Footer />
+
     </Router>
   )
 }

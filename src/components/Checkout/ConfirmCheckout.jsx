@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Mail from '../svg/Mail';
 import Phone from '../svg/Phone';
 import Map from '../svg/Map';
@@ -17,11 +17,20 @@ const ConfirmCheckout = ({ userForm, total, checkoutProducts }) => {
         setRadioActive(!RadioActive)
     }
 
-    if (confirmButtonAnim) {
-        setTimeout(() => {
-            setConfirmTheOrder(true)
-        }, 4500)
-    }
+    // if (confirmButtonAnim) {
+    //     setTimeout(() => {
+    //         setConfirmTheOrder(true)
+    //     }, 4500)
+    // }
+
+    useEffect(() => {
+        if (confirmButtonAnim) {
+            setTimeout(() => {
+                setConfirmTheOrder(true)
+            }, 4500)
+        }
+
+    }, [confirmButtonAnim])
 
     if (ConfirmTheOrder) {
         return <ConfirmMassage />

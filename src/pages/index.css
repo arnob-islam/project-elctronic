@@ -438,6 +438,10 @@ button.btn_search_products {
   color: #6c7590;
 }
 
+.wishandcartlist {
+  background: white;
+}
+
 .wishandcartlist .container .row {
   display: -ms-grid !important;
   display: grid !important;
@@ -547,6 +551,10 @@ button.btn_search_products {
   height: 100vh;
 }
 
+.view__wishList {
+  background: white;
+}
+
 .view__wishList .article-wrapper article {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -554,9 +562,10 @@ button.btn_search_products {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  grid-gap: 2rem;
   gap: 2rem;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -564,6 +573,8 @@ button.btn_search_products {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  max-width: 565px;
+  margin: auto;
 }
 
 .view__wishList .article-wrapper article .img_container {
@@ -1158,6 +1169,10 @@ button.btn_search_products {
   width: 75%;
 }
 
+.user__profile {
+  background: white;
+}
+
 .body__infos {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1189,7 +1204,7 @@ button.btn_search_products {
 }
 
 .branding__head {
-  background: white;
+  background: #f7f8fa;
   padding: 1rem 1.5rem 2rem;
 }
 
@@ -1224,7 +1239,6 @@ button.btn_search_products {
 }
 
 .other_switcher {
-  background: #f8f9fa;
   margin-top: 1rem;
 }
 
@@ -1243,7 +1257,7 @@ button.btn_search_products {
 .other_switcher ul li {
   list-style: none;
   padding: 0.5rem 0;
-  background: #ffffff;
+  background: #f7f8fa;
   padding-left: 1rem;
 }
 
@@ -1264,12 +1278,20 @@ button.btn_search_products {
   color: white;
 }
 
+.error_container {
+  padding: 6.5rem 0 0;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
 .error-container {
   text-align: center;
   font-size: 106px;
   font-family: "Catamaran", sans-serif;
   font-weight: 800;
-  margin: 70px 15px;
+  margin: 5rem 0 0;
 }
 
 .error-container > span {
