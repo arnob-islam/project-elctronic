@@ -15,7 +15,7 @@ const initialState = {
   amount: 0,
   singleItem: [],
 }
-const url = `https://previewux.github.io/project-data-electronics/`;
+const url = `https://arnob-islam.github.io/project-data-electronics/`;
 
 const Contex = ({ children }) => {
 
